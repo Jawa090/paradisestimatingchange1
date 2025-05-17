@@ -41,38 +41,12 @@ const Navbar = () => {
       >
         <div className="container mx-auto px-4 flex justify-between items-center">
           <Link to="/" className="flex items-center group">
-            <div className="h-10 w-10 bg-gold rounded-full flex items-center justify-center mr-2 overflow-hidden relative transition-all duration-500 group-hover:scale-110">
-              <span className="text-white font-bold text-xl absolute animate-pulse">PE</span>
-              <div className="absolute inset-0 bg-navy opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center">
-                <span className="text-gold font-bold text-xl animate-fade-in">PE</span>
-              </div>
-            </div>
-            <span className={`text-2xl font-poppins font-bold ${isScrolled ? 'text-navy' : 'text-white'} transition-all duration-300 relative hidden sm:inline-block`}>
-              <span className="inline-block overflow-hidden">
-                <span className="transform inline-block hover:translate-y-[-2px] transition-transform duration-300">P</span>
-                <span className="transform inline-block hover:translate-y-[-2px] transition-transform duration-300 delay-[50ms]">a</span>
-                <span className="transform inline-block hover:translate-y-[-2px] transition-transform duration-300 delay-100">r</span>
-                <span className="transform inline-block hover:translate-y-[-2px] transition-transform duration-300 delay-150">a</span>
-                <span className="transform inline-block hover:translate-y-[-2px] transition-transform duration-300 delay-200">d</span>
-                <span className="transform inline-block hover:translate-y-[-2px] transition-transform duration-300 delay-250">i</span>
-                <span className="transform inline-block hover:translate-y-[-2px] transition-transform duration-300 delay-300">s</span>
-                <span className="transform inline-block hover:translate-y-[-2px] transition-transform duration-300 delay-350">e</span>
-              </span>
-              <span className="mx-1"></span>
-              <span className="inline-block overflow-hidden">
-                <span className="transform inline-block hover:translate-y-[-2px] transition-transform duration-300 delay-400">E</span>
-                <span className="transform inline-block hover:translate-y-[-2px] transition-transform duration-300 delay-450">s</span>
-                <span className="transform inline-block hover:translate-y-[-2px] transition-transform duration-300 delay-500">t</span>
-                <span className="transform inline-block hover:translate-y-[-2px] transition-transform duration-300 delay-550">i</span>
-                <span className="transform inline-block hover:translate-y-[-2px] transition-transform duration-300 delay-600">m</span>
-                <span className="transform inline-block hover:translate-y-[-2px] transition-transform duration-300 delay-650">a</span>
-                <span className="transform inline-block hover:translate-y-[-2px] transition-transform duration-300 delay-700">t</span>
-                <span className="transform inline-block hover:translate-y-[-2px] transition-transform duration-300 delay-750">i</span>
-                <span className="transform inline-block hover:translate-y-[-2px] transition-transform duration-300 delay-800">n</span>
-                <span className="transform inline-block hover:translate-y-[-2px] transition-transform duration-300 delay-850">g</span>
-              </span>
-            </span>
-          </Link>
+  <img
+    src="/logo.jpg"
+    alt="Paradise Estimating Logo"
+    className={`h-16 w-auto object-contain transition-transform duration-300 relative hidden sm:inline-block group-hover:scale-110 ${isScrolled ? '' : ''}`}
+  />
+</Link>
 
           {/* Desktop Navigation */}
           <div className="hidden lg:flex items-center space-x-8">
